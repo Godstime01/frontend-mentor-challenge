@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="">
+        <img src="images/logo.svg" alt="">
+      </a>
+
+      <div class="nav_items hide">
+        <a href="" class='_links'>
+          About
+        </a>
+        <a href="" class='_links'>
+          Services
+        </a>
+        <a href="" class='_links'>
+          Projects
+        </a>
+        <a href="" class='_links'>
+          Contact
+        </a>
+      </div>
+
+      <!-- mobile icons -->
+      <img src="images/icon-hamburger.svg" class="ham" alt="">
+    </nav>
+
+    <!-- banner section -->
+    <div class="banner">
+      <div class="inner_banner">
+        <h1 class="heading_1">We are creatives</h1>
+        <img src="images/icon-arrow-down.svg" alt="">
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="grid_section">
+
+      <div class="grid_col">
+        <h3>Transform your brand</h3>
+        <p>
+          We are a full-service creative agency specializing in helping brands grow fast.
+          Engage your clients through compelling visuals that do most of the marketing for you.
+          <a href="" class="learn_more">Learn more</a>
+        </p>
+      </div>
+
+      <div class="">
+        <img src="images/mobile/image-transform.jpg" alt="">
+      </div>
+
+      <div class="">
+        <img src="images/mobile/image-stand-out.jpg" alt="">
+      </div>
+
+      <div class="grid_col">
+        <h3>Stand out to the right audience
+        </h3>
+        <p>
+          Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll
+          build and extend your brand in digital places.
+          <a href="" class="learn_more">Learn more</a>
+        </p>
+      </div>
+
+
+
+      <div class="grid_col graphics">
+        <div class="content">
+          <h3>Graphic design</h3>
+          <p>
+            Great design makes you memorable. We deliver artwork that underscores your brand message and captures
+            potential clients’ attention.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid_col photography">
+        <div class="content">
+          <h3>Photography</h3>
+          <p>
+            Increase your credibility by getting the most stunning, high-quality photos that improve your business
+            image.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials_section">
+      <h2>Client testimonials</h2>
+
+      <div>
+        <div class="testimonial">
+          <img src="images/image-emily.jpg" alt="">
+          <p>
+            We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always
+            hit.
+          </p>
+          <h4>Emily R.</h4>
+          <small>Marketing Director</small>
+        </div>
+  
+        <div class="testimonial">
+          <img src="images/image-thomas.jpg" alt="">
+          <p>
+            Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and
+            enjoyable experience.
+          </p>
+  
+          <h4>Thomas S.</h4>
+          <small>Chief Operating Officer</small>
+        </div>
+  
+        <div class="testimonial">
+          <img src="images/image-jennie.jpg" alt="">
+          <p>
+            Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+          </p>
+          <h4>Jennie F.</h4>
+          <small>Business Owner</small>
+        </div>
+      </div>
+      
+    </section>
+
+    <section class="random_images">
+      <img src="images/mobile/image-gallery-milkbottles.jpg" alt="">
+      <img src="images/mobile/image-gallery-orange.jpg" alt="">
+      <img src="images/mobile/image-gallery-cone.jpg" alt="">
+      <img src="images/mobile/image-gallery-sugar-cubes.jpg" alt="">
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="inner_footer">
+      <a href="">
+        <img src="images/logo.svg" alt="">
+      </a>
+      <div class="footer_links">
+        <a href="">About</a>
+        <a href="">Services</a>
+        <a href="">Projects</a>
+      </div>
+    </div>
+
+    <div class="social_icons">
+      <img src="images/icon-facebook.svg" alt="">
+      <img src="images/icon-instagram.svg" alt="">
+      <img src="images/icon-twitter.svg" alt="">
+      <img src="images/icon-pinterest.svg" alt="">
+    </div>
+  </footer>
+
+
+  <script>
+    const ham = document.querySelector('.ham');
+
+    ham.addEventListener('click', () => {
+      // console.log('click')
+      document.querySelector('.nav_items').classList.toggle('hide');
+    })
+  </script>
+</body>
+
+</html>
