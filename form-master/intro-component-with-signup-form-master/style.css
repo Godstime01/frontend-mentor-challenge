@@ -1,4 +1,3 @@
-"@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap)"
 * {
   padding: 0;
   margin: 0;
@@ -9,42 +8,150 @@
   --red: hsl(0, 100%, 74%);
   --green: hsl(154, 59%, 51%);
   --blue: hsl(248, 32%, 49%);
-  --bark_blue: hsl(249, 10%, 26%);
+  --dark_blue: hsl(249, 10%, 26%);
   --grayish_blue: hsl(246, 25%, 77%);
+
+  --padding: 2em;
+  --sm-padding:1em;
 }
 
 body {
-  font-size: 18px;
+  font-size: 16px;
   background-color: var(--red);
   background-image: url(images/bg-intro-mobile.png);
   font-family: 'Poppins', sans-serif;
   height: 100vh;
 }
 
-h1, h2, h3, h4 {
+h1
+
+h2,
+h3,
+h4 {
   font-weight: 700;
 }
+
 
 main {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  text-align: center;
   align-items: center;
   min-height: 100%;
-  color: white;
+  padding: var(--padding);
 }
 
 a {
   text-decoration: none;
 }
 
-input, button {
+input,
+button {
   padding: 1em;
   border-radius: 5px;
-  border: none;
+  border: 1px solid var(--grayish_blue);
   width: 100%;
+  box-sizing: border-box;
   max-width: 100%;
   display: inline-block;
   margin-top: 10px;
+  color: var(--dark_blue);
+  font-weight: 600;
+}
+input::placeholder{
+  text-transform: capitalize;
+}
+input:focus{
+  border: 1px solid var(--dark_blue);
+  outline: none;
+}
+
+.form_group > div{
+  position: relative;
+}
+
+i{
+  color: var(--red);
+  position: absolute;
+  top:50%;
+  left: 100%;
+  transform:translateX(-30px) ;
+  display: none !important;
+}
+
+#form {
+  background-color: white;
+  padding: var(--padding);
+  border-radius: 10px;
+}
+
+.err {
+  color: var(--red);
+  text-align: right;
+  font-size: 12px;
+}
+.green{
+  background-color: var(--green);
+  color: white;
+}
+.green:hover{
+  background-color: var(-- --green);
+  opacity: .8;
+}
+
+.text{
+  text-align: center;
+  color: white;
+  /* padding: var(--sm-padding); */
+}
+.text h1{
+  font-weight: 700;
+  margin-bottom: 10px;
+  /* font-size: 16px; */
+}
+.text p{
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.badge{
+  background-color: var(--blue);
+  padding: var(--sm-padding);
+  margin: 10px 0;
+  border-radius: 5px;
+  vertical-align: middle;
+  color: white;
+  text-align: center;
+}
+
+.badge span{
+  font-weight: 600;
+}
+
+
+.click{
+  font-size: 12px;
+  color: var(--grayish_blue);
+  margin-top: 5px;
+  text-align: center;
+}
+.click a{
+  color: var(--red);
+}
+
+
+@media  screen and (min-width:500px) {
+  main{
+    flex-direction: row;
+  }
+  .text{
+    width: 50%;
+    text-align: left;
+  }
+  .text h1{
+    font-size: 50px;
+  }
+  .text p{
+    font-size: 20px;
+  }
 }
